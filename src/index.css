@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    background: rgb(var(--bg));
+    color: rgb(var(--text));
+}
+
+/* Tema default (fallback) */
+:root {
+    --bg: 255 255 255;
+    --surface: 255 255 255;
+    --text: 24 24 27;
+    /* zinc-900 */
+    --muted: 82 82 91;
+    /* zinc-600 */
+    --border: 228 228 231;
+    /* zinc-200 */
+    --primary: 24 24 27;
+    /* zinc-900 */
+    --primary-fg: 255 255 255;
+}
+
+/* 🏥 CLÍNICA: leve, saúde, confiança (teal) */
+html[data-theme="clinic"] {
+    --bg: 250 252 252;
+    --surface: 255 255 255;
+    --text: 15 23 42;
+    /* slate-900 */
+    --muted: 71 85 105;
+    /* slate-600 */
+    --border: 226 232 240;
+    /* slate-200 */
+    --primary: 13 148 136;
+    /* teal-600 */
+    --primary-fg: 255 255 255;
+}
+
+/* 👤 PROFISSIONAL AUTÔNOMO: pessoal, elegante (indigo) */
+html[data-theme="professional"] {
+    --bg: 250 250 255;
+    --surface: 255 255 255;
+    --text: 30 27 75;
+    /* indigo-950 */
+    --muted: 79 70 229;
+    /* indigo-600 (um pouco mais “presença”) */
+    --border: 224 231 255;
+    /* indigo-100/200 vibe */
+    --primary: 79 70 229;
+    /* indigo-600 */
+    --primary-fg: 255 255 255;
+}
+
+/* 💈 BARBEARIA: alto contraste, “premium” (dark + amber) */
+html[data-theme="barbershop"] {
+    --bg: 9 9 11;
+    /* zinc-950 */
+    --surface: 24 24 27;
+    /* zinc-900 */
+    --text: 244 244 245;
+    /* zinc-100 */
+    --muted: 161 161 170;
+    /* zinc-400 */
+    --border: 39 39 42;
+    /* zinc-800 */
+    --primary: 245 158 11;
+    /* amber-500 */
+    --primary-fg: 9 9 11;
+    /* zinc-950 */
+}
