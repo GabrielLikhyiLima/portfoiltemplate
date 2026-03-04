@@ -27,6 +27,7 @@ export default function Header() {
                 "sticky top-0 z-50 border-b bg-bg/80 backdrop-blur",
                 scrolled ? "border-border shadow-sm" : "border-transparent",
             ].join(" ")}
+
         >
             <Container>
                 <div className="flex h-16 items-center justify-between">
@@ -90,6 +91,12 @@ export default function Header() {
                                 onClick={() => setOpen(false)}
                             >
                                 {siteConfig.cta.primary}
+                            </a>
+                            <a
+                                href="/portfolio"
+                                className="text-sm font-medium text-muted hover:text-text"
+                            >
+                                Portfólio
                             </a>
                         </div>
                     </div>

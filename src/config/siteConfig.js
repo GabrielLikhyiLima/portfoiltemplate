@@ -4,7 +4,7 @@ export const siteConfig = {
         tagline: "Sites profissionais que geram confiança e clientes.",
     },
     links: {
-        whatsapp: "https://wa.me/5531999999999?text=Olá!%20Quero%20um%20site%20profissional.",
+        whatsapp: "https://wa.me/553184453515?text=Olá!%20Quero%20um%20site%20profissional.",
         instagram: "https://instagram.com/",
         email: "contato@suamarca.com",
     },
