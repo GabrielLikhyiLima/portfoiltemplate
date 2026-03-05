@@ -6,19 +6,19 @@ export default function Portfolio() {
             title: "Clínica / Consultório",
             desc: "Site profissional focado em credibilidade e agendamento rápido.",
             link: "/?niche=clinic",
-            img: "/previews/clinic.png",
+            image: "/previews/clinic.png",
         },
         {
             title: "Profissional Autônomo",
             desc: "Página pessoal elegante para psicólogos, nutricionistas e consultores.",
             link: "/?niche=professional",
-            img: "/previews/professional.png",
+            image: "/previews/professional.png",
         },
         {
             title: "Barbearia",
             desc: "Layout moderno para barbearias e estética masculina.",
             link: "/?niche=barbershop",
-            img: "/previews/barbershop.png",
+            image: "/previews/barber.png",
         },
     ];
 
@@ -57,7 +57,7 @@ export default function Portfolio() {
                                 <img
                                     src={demo.image}
                                     alt={demo.title}
-                                    className="rounded-xl mb-4 border border-border"
+                                    className="mb-4 w-full rounded-xl border border-border object-cover aspect-[16/10]"
                                 />
 
                                 <p className="text-muted mt-2 text-sm">
