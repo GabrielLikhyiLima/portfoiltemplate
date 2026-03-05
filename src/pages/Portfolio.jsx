@@ -6,16 +6,19 @@ export default function Portfolio() {
             title: "Clínica / Consultório",
             desc: "Site profissional focado em credibilidade e agendamento rápido.",
             link: "/?niche=clinic",
+            img: "/previews/clinic.png",
         },
         {
             title: "Profissional Autônomo",
             desc: "Página pessoal elegante para psicólogos, nutricionistas e consultores.",
             link: "/?niche=professional",
+            img: "/previews/professional.png",
         },
         {
             title: "Barbearia",
             desc: "Layout moderno para barbearias e estética masculina.",
             link: "/?niche=barbershop",
+            img: "/previews/barbershop.png",
         },
     ];
 
@@ -26,17 +29,18 @@ export default function Portfolio() {
 
                 {/* HEADLINE */}
                 <div className="py-20 text-center max-w-3xl mx-auto">
-                    <h1 className="text-4xl font-bold text-text">
+                    <h1 className="text-4xl md:text-5xl font-bold text-text leading-tight">
                         Sites profissionais para negócios locais
                     </h1>
 
                     <p className="mt-4 text-muted text-lg">
                         Sites rápidos, modernos e prontos para transformar visitantes em clientes.
                     </p>
+                    <p className="mt-2 text-muted text-sm">
+                        Ideal para clínicas, profissionais autônomos e barbearias.
+                    </p>
                 </div>
-                <p className="mt-2 text-muted text-sm">
-                    Ideal para clínicas, profissionais autônomos e barbearias.
-                </p>
+
 
                 {/* DEMOS */}
                 <div className="grid md:grid-cols-3 gap-6 pb-16">
@@ -50,11 +54,17 @@ export default function Portfolio() {
                                 <h3 className="text-lg font-bold text-text">
                                     {demo.title}
                                 </h3>
+                                <img
+                                    src={demo.image}
+                                    alt={demo.title}
+                                    className="rounded-xl mb-4 border border-border"
+                                />
 
                                 <p className="text-muted mt-2 text-sm">
                                     {demo.desc}
                                 </p>
                             </div>
+
 
                             <a
                                 href={demo.link}
