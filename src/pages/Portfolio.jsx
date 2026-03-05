@@ -48,17 +48,19 @@ export default function Portfolio() {
                     {demos.map((demo) => (
                         <div
                             key={demo.title}
-                            className="border border-border rounded-3xl p-6 bg-surface shadow-soft flex flex-col justify-between"
+                            className="group border border-border rounded-3xl p-6 bg-surface shadow-soft flex flex-col justify-between transition-transform duration-300 hover:-translate-y-1 hover:shadow-lg"
                         >
                             <div>
                                 <h3 className="text-lg font-bold text-text">
                                     {demo.title}
                                 </h3>
-                                <img
-                                    src={demo.image}
-                                    alt={demo.title}
-                                    className="mb-4 w-full rounded-xl border border-border object-cover aspect-[16/10]"
-                                />
+                                <div className="overflow-hidden rounded-xl border border-border mb-4">
+                                    <img
+                                        src={demo.image}
+                                        alt={demo.title}
+                                        className="w-full object-cover aspect-[16/10] transition-transform duration-500 ease-out group-hover:scale-105"
+                                    />
+                                </div>
 
                                 <p className="text-muted mt-2 text-sm">
                                     {demo.desc}
