@@ -34,6 +34,9 @@ export default function Portfolio() {
                         Sites rápidos, modernos e prontos para transformar visitantes em clientes.
                     </p>
                 </div>
+                <p className="mt-2 text-muted text-sm">
+                    Ideal para clínicas, profissionais autônomos e barbearias.
+                </p>
 
                 {/* DEMOS */}
                 <div className="grid md:grid-cols-3 gap-6 pb-16">
